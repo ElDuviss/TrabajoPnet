@@ -98,6 +98,10 @@ article {
   border-radius: 40px; /* Radio en las esquinas */
 }
 
+.BotonVerMas:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1); /* Sombra */
+}
+
 .S1 {
   display: none; /* No se muestra en la web */
   margin-bottom: 10px; /* Margen inferior */
