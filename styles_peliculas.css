@@ -94,7 +94,7 @@ article {
   border: none; /* Quita el bordes */
   text-transform: uppercase; /* Que lo pone en mayúsculas */
   cursor: pointer; /* Cambia el cursor a forma de mano */
-  background-color: #4caf50; /* Color fondo botón */
+  background-color: #000000; /* Color fondo botón */
   border-radius: 40px; /* Radio en las esquinas */
 }
 
