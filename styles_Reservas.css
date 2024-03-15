@@ -1,0 +1,251 @@
+/* * Con este elemento afectamos a todos los elementos de la página */
+* {
+  margin: 0; /* Elmina cualquier margen predeterminado que podría aplicar navegador */
+  padding: 0; /* Elminina cualquier relleno predeterminado que podría aplicar el navegador */
+  border: 0; /* Elimina cualquier borde predeterminado que podría aplicar el navegador */
+  box-sizing: border-box; /* Proporciona un modela de caja consistente en los diferentes navegadores */
+  vertical-align: baseline; /* Esta regla establece la alineación vertical de elementos en línea en la línea base */
+}
+
+/* Estilo para la cabezera */
+.Cabezera {
+  background-color: #000000;
+  width: 100%; /* El ancho puedes ajustarlo según tus necesidades */
+  max-height: 60px; /* Altura máxima */
+  color: #fff; /* Color del texto dentro del cuadrado */
+  align-items: center; /* Centro los elementos del contenedor a lo largo del eje vertical */
+  display: flex; /* Combierto el contenedor en un contenedor flexible */
+  justify-content: center; /* Centra los elemetos en el eje horizontal */
+}
+
+.Logo {
+  width: 50px; 
+  height: 50px;
+}
+
+/* Parte del Botón */
+/* Color del botón */
+.Cabezera .Menu_Hamburgesa1 {
+  background-color: #000000;
+  display: none;
+}
+  
+/* Tamaño del botón de menu */
+.Cabezera .svg1 {
+  width: 3em;
+  height: 3em;
+  fill: #fff;
+}
+  
+.nav1 {
+  background-color: #000000;
+}
+  
+.nav1_ul1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+  
+.li {
+  margin: 1.5em;
+}
+  
+/* Estilo para quitar el color azul y la línea subrayada de los enlaces dentro de un <li> */
+li a {
+  text-decoration: none; /* Quita la línea subrayada */
+  color: #fff;
+}
+  
+/* Para el estilo del Cuerpo */
+body {
+  font-family: 'Arial'
+}
+  
+/* Para la foto del Fondo del index */
+.Fondo {
+  background-color: #E5E5E5;
+  background-size: 100% 100%; /* Esto lo ajusta al ancho y largo de la pantalla */
+  width: 100%; /* El ancho puedes ajustarlo según tus necesidades */
+  padding: 1em; /* Espaciado interno dentro del cuadrado */
+}
+
+/* Estilos para el formulario */
+.Formulario {
+  display: grid; /* Lo pone por columnas */
+  grid-template-columns: 1fr 1fr; /* Hace que sean dos columnas por fila */
+  gap: 20px; /* Espaciado de cada elemento de la grid */
+}
+
+.Formulario_Label {
+  display: block;
+  font-weight: 700; /*Fuente en negrita */
+  padding: 10px;
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+  font-weight: 700; 
+  padding: 10px;
+  text-align: center;
+}
+
+.Formulario_Grupo_Input {
+  position: relative;
+}
+
+.Formulario_Input {
+  width: 100%;
+  background-color: #fff;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: .3s ease all;
+}
+
+.Formulario_Input:focus {
+  border: 3px solid #51a2fe;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); /* Sombra */
+}
+
+.Error {
+  font-size: 12px; /* Tamaño de la letra */
+  margin-bottom: 0; /* No tiene margen inferior */
+  display: none; /* No visible */
+}
+
+.Error-activo {
+  display: block; /* Visible */
+}
+
+.Icono {
+  position: absolute; /* Posición absoluta y no afecta a los demás */
+  right: 10px; /* Distancia borde derecho */
+  bottom: 15px; /* Distancia borde de abajo */
+  z-index: 100; /* Para que este por encima de otros elementos */
+  font-size: 16px; /* Tamaño de la letra */
+  opacity: 0; /* No se muestra, es transparente */
+}
+
+.Formulario_Mensaje, .Formulario_Grupo_Boton, .Formulario_Grupo_2 {
+  grid-column: span 2; /* Ocupa dos columnas */
+}
+
+.Formulario_Mensaje {
+  height: 45px; /* Altura */
+  line-height: 45px; /* Altura de la línea en el bloque */
+  background: #F66060; /* Color de fondo */
+  padding: 0 15px; /* Relleno a la izquierda y la derecha */
+  border-radius: 3px; /* Radio de los bordes*/
+  display: none; /* No se muestra */
+}
+
+.Formulario_Mensaje-activo {
+  display: block; /* Se muestra */
+}
+
+.Formulario_Mensaje p {
+  margin: 0; /* Elimina los margenes */
+}
+
+.Formulario_Grupo_Boton {
+  display: flex; /* Contenedor de tipo flex */
+  flex-direction: column; /* En columna */
+  align-items: center; /* Los elementos en el centro del eje horizontal */
+}
+
+.Formulario_Boton {
+  height: 45px; /* Altura */
+  line-height: 45px; /* Altura de la línea en el bloque */
+  width: 30%; /* Anchura */
+  background: #000000; /* Color de fondo */
+  color: #fff; /* Color de la letra */
+  font-weight: bold; /* Negrita */
+  border: none; /* No borde */
+  border-radius: 3px; /* Radio de los bordes del botón */
+  cursor: pointer; /* Te señala que se puede pulsar */
+  transition: .1s ease all;
+}
+
+.Formulario_Boton:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1); /* Sombra */
+}
+
+.Formulario_Grupo-incorrecto .Formulario_Label {
+  color: #bb2929; /* Color de la letra */
+}
+
+.Formulario_Grupo-incorrecto .Icono {
+  color: #bb2929; /* Color del icono */
+  opacity: 1; /* Se muestra en pantalla */
+}
+
+
+.Formulario_Grupo-incorrecto .Formulario_Input:focus {
+  border: 3px solid #bb2929; /* El borde del input se muestra de color rojo */
+}
+
+.Formulario_Grupo_2 {
+  margin: 0 auto; /* Se eliminan los márgenes */
+}
+
+/* Para la parte de abajo con la información de contacto */
+.Contacto {
+  text-align: center; /* Centrar el contenido horizontalmente */
+  background-color: #000000;
+}
+  
+.Contacto img {
+  display: block; /* Hacer que la imagen sea un bloque para centrarla correctamente */
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+  
+.Contacto p {
+  margin: 5px 0; /* Añadir un pequeño espacio entre los párrafos para mejorar la apariencia */
+  color: #fff; /* Cambiar el color del texto del enlace a negro */
+}
+  
+.Contacto a {
+  text-decoration: none; /* Quitar la línea subrayada del enlace */
+  color: #fff; /* Cambiar el color del texto del enlace a negro */
+}
+  
+@media screen and (max-width: 600px){
+  .Formulario {
+    grid-template-columns: 1fr;
+  }
+
+  .Formulario_Mensaje, .Formulario_Grupo_Boton, .Formulario_Grupo_2 {
+    grid-column: span 1;
+  }
+}
+
+/* Para que el botón se adapte al tamaño de la pantalla */
+@media screen and (max-width: 480px) {
+  .nav1 {
+    width: 100%;
+    display: none;
+  }
+  
+  .nav1.activo {
+    display: block;
+  }
+  
+  .Cabezera .Menu_Hamburgesa1{
+    display: block;
+    cursor: pointer;
+  }
+  
+  .nav1_ul1 {
+    flex-direction: column;
+  }
+  
+  .li {
+    margin: 1rem 0;
+  }
+}

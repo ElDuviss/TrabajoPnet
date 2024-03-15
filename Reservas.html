@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Es una página web dedicada a la venta de entradas para un cine de la UCA">
+    <meta name="keywords" content="CinesUCA, UCA, ESI, Cádiz, estrenos, cine de acción, cine de comedia, cine de drama, cine de terror, 
+    proyecciones especiales, eventos cinematográficos, experiencia cinematográfica, calidad de proyección, sonido envolvente, reservar,
+    venta de entradas, comprar entradas">
+    <meta name="author" content="Duván Beltrán Sánchez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CinesUCA</title>
+
+    <link rel="stylesheet" href="styles_Reservas.css">
+</head>
+<body>
+    <header>   
+        <div class="Cabezera">
+            <button title = "button" class="Menu_Hamburgesa1">
+                <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+
+            <h1>CinesUCA</h1>
+            <a href="index.html" >
+                <img src="Imagenes/Logo.jpg" alt = "Logo" class = "Logo">
+            </a>
+        </div>
+
+        <nav class = "nav1">
+            <ul class = "nav1_ul1">
+                <li class="li"><a href="peliculas.html" class="a">Peliculas</a></li>
+                <li class="li"><a href="Reservas.html" class="a">Reservas</a></li>
+                <li class="li"><a href="Salas.html" class="a">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Fondo">
+        <form action="formulario.js" class = "Formulario" id = "Formulario">
+            <!--Nombre-->
+            <div class="Formulario_Grupo" id = "Grupo_Nombre">
+                <label for="Nombre" class = "Formulario_Label">Nombre</label>
+                <div class = "Formulario_Grupo_Input">
+                    <input type="text" class = "Formulario_Input" name = "Nombre" id = "Nombre" placeholder="Duvan">
+                    <i class="Icono fa-solid fa-times-circle"></i>
+                </div>
+                <p class = "Error">En el nombre solo se pueden introducir letras</p>
+            </div>
+
+            <!--Primer Apellido-->
+            <div class="Formulario_Grupo" id = "Grupo_PA">
+                <label for="PA" class = "Formulario_Label">Primer Apellido</label>
+                <div class = "Formulario_Grupo_Input">
+                    <input type="text" class = "Formulario_Input" name = "PA" id = "PA" placeholder="Beltran">
+                    <i class="Icono fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class = "Error">En el primer apellido solo se pueden introducir letras</p>
+            </div>
+
+            <!--Segundo Apellido-->
+            <div class="Formulario_Grupo" id = "Grupo_SA">
+                <label for="SA" class = "Formulario_Label">Segundo Apellido</label>
+                <div class = "Formulario_Grupo_Input">
+                    <input type="text" class = "Formulario_Input" name = "SA" id = "SA" placeholder="Sanchez">
+                    <i class="Icono fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class = "Error">En el segundo apellido solo se pueden introducir letras</p>
+            </div>
+
+            <!--DNI-->
+            <div class="Formulario_Grupo" id = "Grupo_DNI">
+                <label for="DNI" class = "Formulario_Label">DNI</label>
+                <div class = "Formulario_Grupo_Input">
+                    <input type="text" class = "Formulario_Input" name = "DNI" id = "DNI" placeholder="53585655W">
+                    <i class="Icono fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class = "Error">El DNI de ser válido</p>
+            </div>
+
+            <!--Correo Electrónico-->
+            <div class="Formulario_Grupo" id = "Grupo_Correo">
+                <label for="Correo" class = "Formulario_Label">Correo</label>
+                <div class = "Formulario_Grupo_Input">
+                    <input type="email" class = "Formulario_Input" name = "Correo" id = "Correo" placeholder="correo@alum.uca.es">
+                    <i class="Icono fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class = "Error">El correo debe de ser un correo válido</p>
+            </div>
+
+            <!--Teléfono-->
+            <div class="Formulario_Grupo" id = "Grupo_Telefono">
+                <label for="Telefono" class = "Formulario_Label">Teléfono</label>
+                <div class = "Formulario_Grupo_Input">
+                    <input type="text" class = "Formulario_Input" name = "Telefono" id = "Telefono" placeholder="639158929">
+                    <i class="Icono fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class = "Error">Debe ser un teléfono válido, solo debe incluir números</p>
+            </div>
+
+            <!--Tipo de Entrada-->
+            <div class="Formulario_Grupo" id = "Grupo_Entrada">
+                <label for="Entrada" class = "Formulario_Label">Tipo de Entrada</label>
+                <div class = "Formulario_Grupo_Input">
+                    <select class = "Formulario_Input" name="Entrada" id="Entrada">
+                        <option value="Normal">Normal</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--Peliculas-->
+            <div class="Formulario_Grupo" id = "Grupo_Peliculas">
+                <label for="Peliculas" class = "Formulario_Label">Pelicula</label>
+                <div class = "Formulario_Grupo_Input">
+                    <select class = "Formulario_Input" name="Peliculas" id="Peliculas">
+                        <option value="Cuando_acecha_la_maldad">Cuando acecha la maldad</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="La_Piscina">La Piscina</option>
+                        <option value="La_tierra_prometida_(The_Bastard)">La tierra prometida (The Bastard)</option>
+                        <option value="Mientras_seas_tú">Mientras seas tú</option>
+                        <option value="Pobres_criaturas">Pobres criaturas</option>
+                        <option value="Sala_de_profesores">Sala de profesores</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--Número de asientos-->
+            <div class="Formulario_Grupo" id = "Grupo_NA">
+                <label for="NA" class = "Formulario_Label">Número de Asientos</label>
+                <div class = "Formulario_Grupo_Input">
+                    <input type="number" class = "Formulario_Input" name = "NA" id = "NA" placeholder="1">
+                    <i class="Icono fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class = "Error">Solo debe incluir números y debe tener en cuenta el número de asientos máximos de cada tipo</p>
+            </div>
+            
+            <!--Fecha-->
+            <div class="Formulario_Grupo" id = "Grupo_Fecha">
+                <label for="Fecha" class = "Formulario_Label">Día</label>
+                <div class = "Formulario_Grupo_Input">
+                    <input type="date" class = "Formulario_Input" name = "Fecha" id = "Fecha">
+                    <i class="Icono fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class = "Error">Debe incluir una fecha valida</p>
+            </div>
+
+            <!--Horaria Peliculas-->
+            <fieldset class="Formulario_Grupo_2">
+                <legend>Listado de Horas Disponibles:</legend>
+                <label><input type="radio" name="hora" value="09:00"> 09:00</label>
+                <label><input type="radio" name="hora" value="10:00"> 11:30</label>
+                <label><input type="radio" name="hora" value="11:00"> 14:00</label>
+                <label><input type="radio" name="hora" value="11:00"> 15:00</label>
+                <label><input type="radio" name="hora" value="11:00"> 17:30</label>
+                <label><input type="radio" name="hora" value="11:00"> 20:00</label>
+            </fieldset>
+
+            <!--Mensaje-->
+            <div class = "Formulario_Mensaje" id = "Formulario_Mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error: Por favor rellena el formulario correctamente</b></p>
+            </div>
+
+            <!--Botón-->
+            <div class="Formulario_Grupo_Boton">
+                <button type = "submit" class = "Formulario_Boton">Reservar</button>
+                <p class = "Exito" id = "Exito">Se ha realizado la reserva correctamente</p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class = "Contacto">
+            <a href="index.html" >
+                <img src="Imagenes/Logo.jpg" alt = "Logo" class = "Logo">
+            </a>
+            <p>CinesUCA</p>
+            <p><a href="mailto:duvan.beltransanchez@alum.uca.es">duvan.beltransanchez@alum.uca.es</a></p>
+        </div>
+    </footer>
+
+    <script src="formulario.js"></script>
+    <script src="Boton_Hamburgesa.js"></script>
+    <script src="https://kit.fontawesome.com/bd80ceb386.js" crossorigin="anonymous"></script>
+</body>
+</html>

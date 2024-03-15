@@ -1,0 +1,247 @@
+/* * Con este elemento afectamos a todos los elementos de la página */
+* {
+  margin: 0; /* Elmina cualquier margen predeterminado que podría aplicar navegador */
+  padding: 0; /* Elminina cualquier relleno predeterminado que podría aplicar el navegador */
+  border: 0; /* Elimina cualquier borde predeterminado que podría aplicar el navegador */
+  box-sizing: border-box; /* Proporciona un modelo de caja consistente en los diferentes navegadores */
+  vertical-align: baseline; /* Esta regla establece la alineación vertical de elementos en línea en la línea base */
+}
+
+/* Estilo para la cabezera */
+.Cabezera {
+  background-color: #000000; /* Color de fondo */
+  width: 100%; /* El ancho puedes ajustarlo según tus necesidades */
+  max-height: 60px; /* Altura máxima */
+  color: #fff; /* Color del texto dentro del cuadrado */
+  display: flex; /* Combierto el contenedor en un contenedor flexible */
+  align-items: center; /* Centrar los elementos del contenedor a lo largo del eje vertical */
+  justify-content: center; /* Centrar los elemetos en el eje horizontal */
+}
+
+.Logo {
+  width: 50px; /* Anchura */
+  height: 50px; /* Altura */
+}
+
+/* Parte del Botón */
+/* Color del botón */
+.Cabezera .Menu_Hamburgesa1 {
+  background-color: #000000; /*Color de fondo */
+  display: none; /* No aparece por defecto */
+}
+  
+/* Tamaño del botón de menu */
+.Cabezera .svg1 {
+  width: 3em; /* Anchura */
+  height: 3em; /* Altura */
+  fill: #fff; /* Color del simbolo */
+}
+  
+.nav1 {
+  background-color: #000000; /* Color de fondo */
+}
+  
+.nav1_ul1 {
+  display: flex; /* Combierto el contenedor en un contenedor flexible */
+  flex-flow: row nowrap;
+  justify-content: center; /* Centrar los elemetos en el eje horizontal */
+  align-items: center; /* Centrar los elementos del contenedor a lo largo del eje vertical */
+}
+  
+.li {
+  margin: 1.5em; /* Margen */
+}
+  
+/* Estilo para quitar el color azul y la línea subrayada de los enlaces dentro de un <li> */
+li a {
+  text-decoration: none; /* Quita la línea subrayada */
+  color: #fff; /* Color de la letra */
+}
+  
+/* Para el estilo del Cuerpo */
+body {
+  font-family: 'Arial'
+}
+  
+/* Para la foto del Fondo del index */
+.Fondo {
+  background-color: #E5E5E5; /* Color de fondo */
+  background-size: 100% 100%; /* Esto lo ajusta al ancho y largo de la pantalla */
+  width: 100%; /* El ancho puedes ajustarlo según tus necesidades */
+  padding: 1em; /* Espaciado interno dentro del cuadrado */
+}
+
+/* Para el carrousel */
+.Titulo {
+  text-align: center;
+  font-size: 40px;
+}
+
+.contenedor {
+  width: 100%; /* Cambiado a 100% para ocupar todo el ancho de la pantalla */
+  height: auto;
+  margin: 30px auto 0;
+  overflow: hidden; /* Para asegurar que no haya desbordamiento horizontal */
+}
+
+.contenedor ul {
+  display: flex;
+  padding: 0;
+  width: 700%;
+  animation: slide 70s infinite alternate ease-in-out;
+}
+
+.contenedor li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.contenedor img {
+  width: 15%;
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+@keyframes slide {
+  0% { margin-left: 0; }
+  7.14% { margin-left: 0; }   
+  14.28% { margin-left: 0; }  
+  21.42% { margin-left: -100%; } 
+  28.56% { margin-left: -100%; } 
+  35.7% { margin-left: -200%; } 
+  42.84% { margin-left: -200%; }
+  50% { margin-left: -300%; }
+  57.14% { margin-left: -300%; }
+  64.28% { margin-left: -400%; }
+  71.42% { margin-left: -400%; }
+  78.56% { margin-left: -500%; }
+  85.7% { margin-left: -500%; }
+  92.84% { margin-left: -600%; }
+  100% { margin-left: -600%; }
+}
+
+/* Noticias */
+.CuerpoNoticias {
+  background-color: #E5E5E5; /* Cambia el color de fondo según tus necesidades */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+Summary {
+  background-color: #4caf50; /* Color fondo botón */
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: initial;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+Summary:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1); /* Sombra */
+}
+
+.Noticia {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.ImagenNoticia {
+  width: 12em;
+  height: 12em;
+}
+
+.TextoNoticia {
+  float: initial;
+  background-color: #fff;
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 1em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Para la parte de abajo con la información de contacto */
+.Contacto {
+  text-align: center; /* Centrar el contenido horizontalmente */
+  background-color: #000000;
+}
+  
+.Contacto img {
+  display: block; /* Hacer que la imagen sea un bloque para centrarla correctamente */
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+  
+.Contacto p {
+  margin: 5px 0; /* Añadir un pequeño espacio entre los párrafos para mejorar la apariencia */
+  color: #fff; /* Cambiar el color del texto del enlace a negro */
+}
+  
+.Contacto a {
+  text-decoration: none; /* Quitar la línea subrayada del enlace */
+  color: #fff; /* Cambiar el color del texto del enlace a negro */
+}
+
+/* Para que el botón se adapte al tamaño de la pantalla */
+@media screen and (max-width: 480px) {
+  .nav1 {
+    width: 100%;
+    display: none;
+  }
+  
+  .nav1.activo {
+    display: block;
+  }
+  
+  .Cabezera .Menu_Hamburgesa1{
+    display: block;
+    cursor: pointer;
+  }
+  
+  .nav1_ul1 {
+    flex-direction: column;
+  }
+  
+  .li {
+    margin: 1rem 0;
+  }
+}
+
+/* Media Query para el carrusel */
+@media (max-width: 768px) {
+  .Titulo {
+    font-size: 30px;
+  }
+
+  .contenedor {
+    width: 80%;
+  }
+
+  .contenedor img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Titulo {
+    font-size: 20px;
+  }
+
+  .contenedor {
+    width: 90%;
+  }
+
+  .contenedor img {
+    width: 40%;
+  }
+}

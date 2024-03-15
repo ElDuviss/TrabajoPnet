@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Es una página web dedicada a la venta de entradas para un cine de la UCA">
+    <meta name="keywords" content="CinesUCA, UCA, ESI, Cádiz, estrenos, cine de acción, cine de comedia, cine de drama, cine de terror, 
+    proyecciones especiales, eventos cinematográficos, experiencia cinematográfica, calidad de proyección, sonido envolvente">
+    <meta name="author" content="Duván Beltrán Sánchez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CinesUCA</title>
+
+    <link rel="stylesheet" href="styles_Salas.css">
+</head>
+<body>
+    <header>   
+        <div class="Cabezera">
+            <button title = "button" class="Menu_Hamburgesa1">
+                <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+
+            <h1>CinesUCA</h1>
+            <a href="index.html" >
+                <img src="Imagenes/Logo.jpg" alt = "Logo" class = "Logo">
+            </a>
+        </div>
+
+        <nav class = "nav1">
+            <ul class = "nav1_ul1">
+                <li class="li"><a href="peliculas.html" class="a">Peliculas</a></li>
+                <li class="li"><a href="Reservas.html" class="a">Reservas</a></li>
+                <li class="li"><a href="Salas.html" class="a">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class = "Fondo">
+        <div class = "Informacion">
+            <h1>¿Quienes somos?</h1>
+            <p>
+                Este es un cine creado por la UCA para que los alumnos que no saben que hacer en su tiempo libre puedan pasar un rato más ameno
+                mientras que esperan a su siguiente clase
+            </p>
+
+            <h1>¿Donde estamos?</h1>
+            <iframe class = "Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.6955232078276!2d-6.204190924548087!3d36.53733937232322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f79854b8f0de1%3A0x8d075bd9e5895558!2sEscuela%20Superior%20de%20Ingenier%C3%ADa!5e0!3m2!1ses!2ses!4v1709207495598!5m2!1ses!2ses" title="Mapa de Google" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h1>¿Que Ofrece?</h1>
+            <p>
+                Este servicio de cine le va a proporcionar al alumnado un conjunto de peliculas que pondrá
+                ver dentro de distiantas salas que se encuentran disponibles
+            </p>
+
+            <h1>¿Como se puede reservar una entrada?</h1>
+            <p>
+                Para poder reservar una entrada para cualquier pelicula que se oferte lo que se tiene que hacer es entrar dentro del apartado de
+                reserva dentro de la própia página web. Dentro de este apartado lo que tienes que hacer es rellenar el formulario y validarlo.
+                Después de eso solo tienes que ir al cine y dar el DNI para que el supervisor mire tu reserva y te cobre la entrada
+            </p>
+
+            <h1>Tipos de asientos</h1>
+            <p>
+                En este apartado se explicará las diferencias existentes entre las dos tipos de entradas que se pueden comprar. La primera de ellas
+                es la normal y la segunda es la premium. Se explicará en detalle las ventajas y desventajas de cada una y se mostrará una tabla
+                para que queda más clara lo que tiene cada una de las entradas correspondientes
+            </p>
+
+            <article>
+                <h2>Asientos Normales</h2>
+                <p>
+                    La entrada normal lo que permite es reservar uno de los asientos normales para ver la pelicula que se quiera ver. Dentro de
+                    esta entrada no es incluye comida o bebida por lo que si quiere comer o beber cualquier cosa lo deberá de traer por su propia
+                    cuenta.
+                </p>
+                <img class = "ImagenSilla" src="Imagenes/Silla_normal.png" alt="Silla de la tarifa normal del cine">
+            </article>
+
+            <article>
+                <h2>Asientos Premium</h2>
+                <p>
+                    La entrada premium lo que nos permite es reservar un asiento premium en la fila intermedia del cine, que es donde se tiene
+                    la mejor visión de la pelicula. Esta entrada también trae unas ciertas ventajas que no tiene la normal, no se tendrá que 
+                    esperar mucha cola, ya que en el cine se dispone de una entrada especial para las personas que tengan una entrada premium. 
+                    Otra ventaja es que al entrar podrá seleccionar entre un amplio surtido de palomitas y refrescos para acompañar en la pelicula. 
+                    Otra ventaja que tiene esta entrada es el asiento incluye ciertas ventajas, las cuales son un reposapies y un apoya cabezas muy
+                    comodo, los cuales se pueden retirar si el cliente lo desea, y un enchufe para que pueda cargar el movil u otro dispositivo 
+                    mientras ve la pelicula. 
+                </p>
+                <img class = "ImagenSilla" src="Imagenes/Silla_premium.png" alt="Silla de la tarifa premium del cine">
+            </article>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Características</th>
+                    <th>Normal</th>
+                    <th>Premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sitios por sala</td>
+                    <td>90</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Entrada VIP</td>
+                    <td>No</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Comida Incluida</td>
+                    <td>No</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Reposapies</td>
+                    <td>No</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Apoya cabezas</td>
+                    <td>No</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Cargador de movil</td>
+                    <td>No</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Descripción</td>
+                    <td><a href="https://es.eu.valenciatheaterseating.com/products/valencia-tuscany-single-home-cinema-seating?variant=43582864687354&stkn=445b023b7ecd&gad_source=1&gclid=CjwKCAiA_tuuBhAUEiwAvxkgTsoaq_8hmu7fanAnZkbWYGo70YfXRhy1V1Y85HnFmIH_NJuAV1adzBoCTUIQAvD_BwE">Asientos de cine Stagecaptain CS-600R Movieking en rojo</a></td>
+                    <td><a href="https://www.kirstein.es/Home-Living/Muebles-y-accesorios-para-el-hogar/Kinosessel/Asientos-de-cine-Stagecaptain-CS-600R-Movieking-en-rojo.html?glp=1&gad_source=1&gclid=CjwKCAiA_tuuBhAUEiwAvxkgTsXCjExfYvXQaUwawE4tN5hY52qDGyMV2sPb6wdWlx5DNl4XvKct1BoCdmYQAvD_BwE">Valencia Tuscany Single Home Cinema Seating</a></td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td>5€</td>
+                    <td>20€</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class = "Contacto">
+            <a href="index.html" >
+                <img src="Imagenes/Logo.jpg" alt = "Logo" class = "Logo">
+            </a>
+            <p>CinesUCA</p>
+            <p><a href="mailto:duvan.beltransanchez@alum.uca.es">duvan.beltransanchez@alum.uca.es</a></p>
+        </div>
+    </footer>
+    <script src="Boton_Hamburgesa.js"></script>
+</body>
+</html>

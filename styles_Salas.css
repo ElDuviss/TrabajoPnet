@@ -1,0 +1,171 @@
+/* * Con este elemento afectamos a todos los elementos de la página */
+* {
+  margin: 0; /* Elmina cualquier margen predeterminado que podría aplicar navegador */
+  padding: 0; /* Elminina cualquier relleno predeterminado que podría aplicar el navegador */
+  border: 0; /* Elimina cualquier borde predeterminado que podría aplicar el navegador */
+  box-sizing: border-box; /* Proporciona un modela de caja consistente en los diferentes navegadores */
+  vertical-align: baseline; /* Esta regla establece la alineación vertical de elementos en línea en la línea base */
+}
+
+/* Estilo para la cabezera */
+.Cabezera {
+  background-color: #000000;
+  width: 100%; /* El ancho puedes ajustarlo según tus necesidades */
+  max-height: 60px; /* Altura máxima */
+  color: #fff; /* Color del texto dentro del cuadrado */
+  align-items: center; /* Centro los elementos del contenedor a lo largo del eje vertical */
+  display: flex; /* Combierto el contenedor en un contenedor flexible */
+  justify-content: center; /* Centra los elemetos en el eje horizontal */
+}
+
+.Logo {
+  width: 50px; 
+  height: 50px;
+}
+  
+/* Parte del Botón */
+/* Color del botón */
+.Cabezera .Menu_Hamburgesa1 {
+  background-color: #000000;
+  display: none;
+}
+  
+/* Tamaño del botón de menu */
+.Cabezera .svg1 {
+  width: 3em;
+  height: 3em;
+  fill: #fff;
+}
+  
+.nav1 {
+  background-color: #000000;
+}
+  
+.nav1_ul1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+  
+.li {
+  margin: 1.5em;
+}
+  
+/* Estilo para quitar el color azul y la línea subrayada de los enlaces dentro de un <li> */
+li a {
+  text-decoration: none; /* Quita la línea subrayada */
+  color: #fff;
+}
+
+/* Para el estilo del Cuerpo */
+body {
+  font-family: 'Arial'
+}
+  
+/* Para la foto del Fondo del index */
+.Fondo {
+  background-color: #E5E5E5;
+  background-size: 100% 100%; /* Esto lo ajusta al ancho y largo de la pantalla */
+  width: 100%; /* El ancho puedes ajustarlo según tus necesidades */
+  padding: 1em; /* Espaciado interno dentro del cuadrado */
+}
+
+/* Parte del Body de Salas */
+h1, h2 {
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.Informacion p {
+  text-align: center; /* Centra horizontalmente el texto dentro de <p> */
+  max-width: 800px;   /* Establece la anchura máxima deseada */
+  margin: 0 auto;     /* Centra el elemento <p> en el contenedor */
+}
+
+/* Parte del mapa */
+.Mapa{
+  max-width: 600px; /* Anchura maxima */
+  width: 100%; /* Anchura */
+  height: 400px; /* Altura */
+  padding: 1em; /* Relleno de 1em por todos los lados */
+  display: block; /* Aparece visible */
+  margin: 0 auto; /* Centra el mapa */
+}
+
+.ImagenSilla {
+  max-width: 250px; /* Anchura máxima */
+  width: 100%; /* Anchura */
+  height: 250px; /* Atura */
+  display: block; /* Aparece visible */
+  margin: 0 auto; /* Centra el mapa */
+}
+
+table {
+  width: 100%; /*Ancho */
+  border-collapse: collapse; /* Combina los bordes de de la tabla */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+th, td {
+  padding: 12px; /* Relleno de 1em por todos los lados */
+  text-align: left; /* Alineación del texto a la izquierda */
+}
+
+th {
+  background-color: #f2f2f2; /* Color del fondo*/
+}
+
+td a {
+  text-decoration: none; /* Quitar la línea subrayada del enlace */
+  color: #000000; /* Cambiar el color del texto del enlace a negro */
+}
+
+tr:hover {
+  background-color: #f5f5f5; /* Color del fondo*/
+}
+
+/* Para la parte de abajo con la información de contacto */
+.Contacto {
+  text-align: center; /* Centrar el contenido horizontalmente */
+  background-color: #000000;
+}
+
+.Contacto img {
+  display: block; /* Hacer que la imagen sea un bloque para centrarla correctamente */
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+.Contacto p {
+  margin: 5px 0; /* Añadir un pequeño espacio entre los párrafos para mejorar la apariencia */
+  color: #fff; /* Cambiar el color del texto del enlace a negro */
+}
+
+.Contacto a {
+  text-decoration: none; /* Quitar la línea subrayada del enlace */
+  color: #fff; /* Cambiar el color del texto del enlace a negro */
+}
+  
+  /* Para que el botón se adapte al tamaño de la pantalla */
+  @media screen and (max-width: 480px) {
+    .nav1 {
+      width: 100%;
+      display: none;
+    }
+  
+    .nav1.activo {
+      display: block;
+    }
+  
+    .Cabezera .Menu_Hamburgesa1{
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav1_ul1 {
+      flex-direction: column;
+    }
+  
+    .li {
+      margin: 1rem 0;
+    }
+  }

@@ -1,0 +1,48 @@
+{
+    "Reservas": [
+        {
+            "id": 1,
+            "Nombre": "Duvan",
+            "PA": "Beltran",
+            "SA": "Sanchez",
+            "DNI": "53585655W",
+            "Correo": "duvan.beltransanchez@alum.uca.es",
+            "Telefono": 639158929,
+            "TipoEntrada": "Normal",
+            "Pelicula": "Cuando acecha la maldad",
+            "NA": 2,
+            "Fecha": "14-03-2024",
+            "Hora": "09:00"
+        },
+
+        {
+            "id": 2,
+            "Nombre": "Pepe",
+            "PA": "Beltran",
+            "SA": "Letran",
+            "DNI": "53588955F",
+            "Correo": "pepe.beltranletran@alum.uca.es",
+            "Telefono": 111158939,
+            "TipoEntrada": "Premium",
+            "Pelicula": "Cuando_acecha_la_maldad",
+            "NA": 1,
+            "Fecha": "14-03-2024",
+            "Hora": "09:00"
+        },
+
+        {
+            "id": 3,
+            "Nombre": "Pepa",
+            "PA": "Gonzales",
+            "SA": "Carmona",
+            "DNI": "98897676P",
+            "Correo": "pepaGonzales@gmail.com",
+            "Telefono": 984163867,
+            "TipoEntrada": "Normal",
+            "Pelicula": "Cuando acecha la maldad",
+            "NA": 25,
+            "Fecha": "14-03-2024",
+            "Hora": "09:00"
+        }
+    ]
+}
